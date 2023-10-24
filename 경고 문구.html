@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>영복여자고등학교 컴퓨터공학부</title>
+</head>
+<style>
+    body{
+        background-color: black;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+    }
+    h1{
+        font:2em "맑은 고딕";
+        color : red;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    img.static { 
+        position: static;
+    }
+
+    .next-button {
+        background-color: black;
+        padding: 10px 20px;
+        border-color: red;
+        color: red;
+        border-radius: 5px;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+        /* 버튼에 호버(마우스 오버) 효과 추가 */
+    .next-button:hover {
+         background-color: red;
+         color: black;
+    }
+
+    .pre-button {
+        background-color: black;
+        padding: 10px 20px;
+        border-color: red;
+        border-radius: 5px;
+        color: red;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+        /* 버튼에 호버(마우스 오버) 효과 추가 */
+    .pre-button:hover {
+         background-color: red;
+         color: black;
+    }
+
+</style>
+<body>
+    <img src = "경고.png" alt ="주의하세요"></img>
+    <h1>
+        <p>이 게임은 픽션이며 실제 인물, 사건, 단체와는<br>일절 관계가 없습니다.</p>
+        <p>이 게임에는 장면이 포함되어있습니다. <br>심장 질환자, 심신 미약자는 각별히 주의하시기 바랍니다.</p>
+    </h1>
+    <div>
+        <button class = "pre-button" type = "button" onclick = "location.href = '학번 이름.html'"><</button>
+        <button class = "next-button" type = "button" onclick = "location.href = '사물함.html'">></button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>영복여자고등학교 컴퓨터공학부</title>
+</head>
+<style>
+    body{
+        background-color: black;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+    .fade-in-box {
+    display: inline-block;
+    position: fixed;
+    top: 250px;
+    padding: 10px;
+    animation: fadein 3s;
+    -moz-animation: fadein 3s; /* Firefox */
+    -webkit-animation: fadein 3s; /* Safari and Chrome */
+    -o-animation: fadein 3s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+    
+    .continue-button {
+        color: rgb(163, 12, 12);
+        background-color: black;
+        border: none;
+        font-size: 25px;
+        position: fixed;
+        bottom: 1rem;
+        right: 0rem;
+    }
+</style>
+<body>
+<div class="fade-in-box" style="color: rgb(163, 12, 12); font-weight: 1000; font-size: 50px;">음악실</div>
+<div>
+    <button class="continue-button" type = "button" onclick = "location.href = '음악실2.html'">></button>
+</div>
+</body>
+</html>

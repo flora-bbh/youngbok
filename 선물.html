@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>영복여자고등학교 컴퓨터공학부</title>
+</head>
+<style>
+    body{
+        background-color: black;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+    h1{
+        font:2em "맑은 고딕";
+        color : red;
+        font-size: 1rem;
+        text-align: center;
+    }
+    h2{
+        font:2em "맑은 고딕";
+        color : red;
+        font-size: 0.8rem;
+        text-align: center;
+    }
+    .next-button {
+        background-color: black;
+        padding: 10px 20px;
+        border-color: red;
+        color: red;
+        border-radius: 5px;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+        /* 버튼에 호버(마우스 오버) 효과 추가 */
+    .next-button:hover {
+         background-color: red;
+         color: black;
+    }
+</style>
+<body>
+    <h1>
+        <p>다음 화면을 캡처한 뒤 해당 학생 3명에게 보여주시면</p>
+        <p>소정의 상품을 드립니다.</p>
+    </h1>
+    <h2>
+        <p>(20704 김예진, 20714 이하연, 20720 황채리)</p>
+    </h2>
+    <div>
+        <button class = "next-button" type = "button" onclick = "location.href = '선물용학번이름.html'">></button>
+    </div>
+</body>
+</html>
