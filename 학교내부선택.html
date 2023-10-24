@@ -1,0 +1,84 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>영복여자고등학교 컴퓨터공학부</title>
+</head>
+<style>
+    body{
+        background-color: black;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+   
+    .speech {
+        position: fixed;
+        right: 10%;
+        left: 10%;
+        bottom: 13%;
+        top: 13%;
+    }
+    .생물실-button {
+        color: red;
+        background-color: black;
+        border: none;
+        position: fixed;
+        top: 225px;
+        right: 155px;
+        font-size: medium;
+    }
+    .화장실-button {
+        color: red;
+        background-color: black;
+        border: none;
+        position: fixed;
+        top: 300px;
+        right: 155px;
+        font-size: medium;
+    }
+    
+    .도서관-button {
+        color: red;
+        background-color: black;
+        border: none;
+        position: fixed;
+        top: 375px;
+        right: 155px;
+        font-size: medium;
+    }
+    .미술실-button {
+        font-size: medium;
+        color: red;
+        background-color: black;
+        border: none;
+        position: fixed;
+        top: 450px;
+        right: 155px;
+    }
+    .열쇠-button {
+        font-size: medium;
+        color: red;
+        background-color: black;
+        border: none;
+        position: fixed;
+        top: 520px;
+        right: 60px;
+    }
+</style>
+<body>
+<div class="speech" style="border : 1px solid red; padding:5px;">
+<p style="color : red; font-weight: 1000; padding-left: 33%; padding-top: 10%;">어디부터 가볼까?</p></div>
+<div>
+    <button class="생물실-button" type = "button" onclick = "location.href = '생물실1.html'">생물실</button>    
+    <button class="화장실-button" type = "button" onclick = "location.href = '화장실1.html'">화장실</button>
+    <button class="도서관-button" type = "button" onclick = "location.href = '도서관1.html'">도서관</button>
+    <button class="미술실-button" type = "button" onclick = "location.href = '미술실1.html'">미술실</button>
+    <button class="열쇠-button" type = "button" onclick = "location.href = '정문.html'">🔑</button>
+</div>
+</body>
+</html>

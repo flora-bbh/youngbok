@@ -1,0 +1,124 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>영복여자고등학교 컴퓨터공학부</title>
+    <script>
+        function work() {
+            let usernumber = document.getElementById("number").value;
+            let username = document.getElementById("name").value;
+            localStorage.setItem('numberdata', usernumber);
+            localStorage.setItem('namedata', username);
+        }
+    </script>
+</head>
+<style>
+    body { 
+            background-color: black;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+    h1  {
+        font:1.5em "맑은 고딕";
+        color : white;
+        text-align: center;
+        }
+    h2  {
+        font:3em "맑은 고딕";
+        color : white;
+    }
+    h3  {
+        font:1em "맑은 고딕";
+        color : yellow;
+        text-decoration: underline;
+        text-align: center;
+        font-size: 13px;
+    }
+
+    input {
+        width: 15rem;
+        height: 2rem;
+        background-color: black;
+        color: red;
+        outline: none;
+        border-color:red;
+        border-width: 0 0 2px;
+    }
+
+    input:focus {
+        outline: none;
+        border-color: red;
+    }
+
+    input[type=submit] {
+        background-color: red;
+        color: black;
+        border-color: black;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    div {
+        display: inline-block;
+        
+    }
+    
+    .next-button {
+            background-color: black;
+            padding: 10px 20px;
+            border-color: red;
+            color: red;
+            border-radius: 5px;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        /* 버튼에 호버(마우스 오버) 효과 추가 */
+        .next-button:hover {
+            background-color: red;
+            color: black;
+        }
+        .pre-button {
+            background-color: black;
+            padding: 10px 20px;
+            border-color: red;
+            border-radius: 5px;
+            color: red;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        /* 버튼에 호버(마우스 오버) 효과 추가 */
+        .pre-button:hover {
+            background-color: red;
+            color: black;
+        }
+</style>
+
+<body>
+    <!-- 학번이 21200 이상이거나 10101 미만이면 다시 확인해달라는 안내문 띄우거나,,, -->
+    <br>
+    <h1>아래에 학번과 이름을 입력해주세요.</h1>
+    <h2>
+        <input name = "userID" id = "number" type="text" placeholder="학번을 입력해주세요"/><br>
+        <input name = "userName" id = "name" type="text" placeholder="이름을 입력해주세요"/><br>
+        <br>
+        <input  type="submit" value="submit" onclick="work()">
+    </h2>
+    <div>
+        <button class = "pre-button" type = "button" onclick = "location.href = '표지-시작하기.html'"><</button>
+        <button class = "next-button" type = "button" onclick = "location.href = '경고 문구.html'">></button>
+    </div>
+    <h3>*선생님들께서는 학번에 "00000"을 입력해주세요.
+        <br>
+        *상품 수령시 학번이 필요하므로 반드시 자신의 학번을 입력해주세요.
+    </h3>
+    
+</body>
+
+</html>

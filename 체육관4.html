@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>영복여자고등학교 컴퓨터공학부</title>
+    <script>
+        document.write("어떤 노래일까?".fontcolor("white").fontsize(6));
+
+        function work() {
+            var text = document.getElementById("a").value;
+        if(text == "작은별"){
+                location.href = "체육관5-1.html";
+            }
+            else{
+                location.href = "체육관5-2.html";
+            }
+        }
+    </script>
+</head>
+<style>
+    body{
+        background-color: black;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+    .in {
+        width : 15rem;
+        height: 1rem;
+        background-color: black;
+        color : red;
+        outline : none;
+        border-color : red;
+        border-width: 0 0 2px;
+    }
+
+    .ok {
+        background-color: red;
+        color: black;
+        border-color: black;
+        font-size: 1rem;
+        font-weight: bold;
+        width: 15rem;
+        height: 2rem;
+    }
+
+    .speech {
+        position: fixed;
+        right: 10px;
+        left: 10px;
+        bottom: 10px;
+        top: 550px;
+    }
+    .continue-button {
+        color: gray;
+        background-color: black;
+        border: none;
+        position: fixed;
+        bottom: 1rem;
+        right : 1rem;
+    }
+</style>
+<body>
+<!-- <div class="speech" style="border : 1px solid gray; padding:5px;"> -->
+<!-- <p style="color : gray; font-weight: 1000; padding-left: 10px">아직 잘 모르겠어용...기능 고민 중입니당</p></div> -->
+<!-- <div> -->
+    <!-- <button class="continue-button" type = "button" onclick = "location.href = '야외.html'">V</button> -->
+<!-- </div> -->
+입력 : <input class="in" type="text" id="a" style="width:200px; height:50px" placeholder="텍스트 입력" /><br>
+<input class="ok" type = "button" value="submit" onclick="work()" />
+</body>
+</html>
